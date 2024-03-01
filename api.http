@@ -1,0 +1,31 @@
+#to check locally for these requests
+
+
+GET http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+###
+
+POST http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "title" : "Harry Potter 2",
+    "year": "2203"
+}
+
+
+###
+
+PUT http://localhost:3001/books/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Dark Tower"
+}
+
+
+###
+
+DELETE  http://localhost:3001/books/1 HTTP/1.1
+Content-Type: application/json
